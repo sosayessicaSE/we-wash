@@ -11,10 +11,6 @@ export const metadata = {
     description: siteConfig.description,
     path: '/',
   }),
-  icons: {
-    icon: '/images/wewash.png',
-    apple: '/images/wewash.png',
-  },
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
