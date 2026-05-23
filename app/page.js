@@ -12,19 +12,21 @@ export default function Home() {
       <main className="py-12 h-full">
         <div className="container mx-auto px-4 py-6 md:py-12 flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 text-center md:text-left bg-white p-4 md:p-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-500 leading-tight tracking-wide mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-500 leading-tight tracking-wide mb-4">
               Cuidado e <span className="text-blue-600">Tradição</span>
               <br /> em Cada Detalhe
-            </h2>
+            </h1>
             <p className="mt-4 text-gray-700 text-lg">
               Utilize nossos serviços com praticidade e conveniência.
             </p>
             <a
               href="https://api.whatsapp.com/send?phone=5547991769357&text=Ol%C3%A1!%20Eu%20gostaria%20de%20fazer%20um%20pedido%20de%20lavanderia.%20Como%20posso%20enviar%20minhas%20roupas%20para%20voc%C3%AAs%3F%20%F0%9F%98%8A "
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-block bg-blue-400 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-500 transition duration-300 shadow-md"
             >
-Fale conosco            </a>
+              Fale conosco
+            </a>
             <div className="mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-gray-700 justify-center md:justify-start">
               <Feature icon={faLeaf} text="Eco Friendly" color="text-green-500" />
               <Feature icon={faPiggyBank} text="Economia de Dinheiro" color="text-blue-500" />
@@ -32,7 +34,7 @@ Fale conosco            </a>
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-            <Image src="/images/laundry-image.png" alt="Lavanderia" width={500} height={500} className="rounded-xl shadow-lg border border-gray-100 w-full max-w-[300px] md:max-w-none" unoptimized={true} priority />
+            <Image src="/images/laundry-image.png" alt="Lavanderia WeWash em Itajaí — lavagem e cuidado com roupas" width={500} height={500} className="rounded-xl shadow-lg border border-gray-100 w-full max-w-[300px] md:max-w-none" unoptimized={true} priority />
           </div>
         </div>
 
@@ -40,7 +42,7 @@ Fale conosco            </a>
           <div className="bg-white rounded-xl border border-gray-100 shadow-lg p-4 md:p-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
               <div className="w-full md:w-1/2">
-                <Image src="/images/mainvideo.gif" alt="Lavanderia" width={800} height={800} className="rounded-xl shadow-md w-full" priority />
+                <Image src="/images/mainvideo.gif" alt="Processo de lavagem profissional na WeWash Itajaí" width={800} height={800} className="rounded-xl shadow-md w-full" priority />
               </div>
               <div className="w-full md:w-1/2 space-y-6">
                 <h2 className="text-3xl font-bold text-blue-500 mb-6">Por que escolher nossa lavanderia?</h2>
@@ -78,6 +80,7 @@ Fale conosco            </a>
                 <a
                   href="https://api.whatsapp.com/send?phone=5547991769357&text=Ol%C3%A1!%20Eu%20gostaria%20de%20fazer%20um%20pedido%20de%20lavanderia.%20Como%20posso%20enviar%20minhas%20roupas%20para%20voc%C3%AAs%3F%20%F0%9F%98%8A "
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-blue-400 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition duration-300 shadow-md mt-4"
                 >
                   Contate-nos

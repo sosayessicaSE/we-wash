@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { siteConfig } from '../../lib/site';
 
 export default function Footer() {
   return (
@@ -8,10 +10,16 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold mb-4 text-blue-400">Contato</h3>
             <p className="text-gray-300 mb-2">
-              <span className="text-blue-300">WhatsApp:</span> (47) 99176-9357
+              <span className="text-blue-300">WhatsApp:</span>{' '}
+              <a href={siteConfig.social.whatsapp} className="hover:text-white transition-colors">
+                {siteConfig.phoneDisplay}
+              </a>
             </p>
             <p className="text-gray-300">
-              <span className="text-blue-300">Telefone:</span> (47) 99176-9357
+              <span className="text-blue-300">Email:</span>{' '}
+              <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">
+                {siteConfig.email}
+              </a>
             </p>
           </div>
 
@@ -53,8 +61,15 @@ export default function Footer() {
           </div>
         </div>
 
+        <nav className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-gray-400" aria-label="Links do rodapé">
+          <Link href="/" className="hover:text-white transition-colors">Início</Link>
+          <Link href="/sobre" className="hover:text-white transition-colors">Sobre nós</Link>
+          <Link href="/servicos" className="hover:text-white transition-colors">Serviços</Link>
+          <Link href="/contato" className="hover:text-white transition-colors">Contato</Link>
+        </nav>
+
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+        <div className="mt-6 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
           <p>© {new Date().getFullYear()} WeWash. Todos os direitos reservados.</p>
         </div>
       </div>

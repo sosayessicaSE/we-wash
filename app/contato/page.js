@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "../styles/globals.css";
 
 export default function Contato() {
   return (
@@ -10,9 +9,9 @@ export default function Contato() {
       {/* Contact Section */}
       <section className="pt-24 pb-16">
         <div className="relative">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-4 drop-shadow-lg relative z-10">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-4 drop-shadow-lg relative z-10">
             Entre em Contato
-          </h2>
+          </h1>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-48 h-1 bg-gradient-to-r from-blue-200 to-blue-400 rounded-full blur-sm"></div>
           </div>
@@ -106,10 +105,11 @@ export default function Contato() {
                 </div>
               </div>
               <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden mb-8">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6603082251822!2d-48.65881332368758!3d-26.914273793270688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cbf59f0fb447%3A0x3098d0a4e47d5b12!2sAv.%20Sete%20de%20Setembro%2C%20906%20-%20Fazenda%2C%20Itaja%C3%AD%20-%20SC%2C%2088301-202!5e0!3m2!1sen!2sbr!4v1777913693711!5m2!1sen!2sbr" 
-                  width="600" 
-                  height="450" 
+                <iframe
+                  title="Mapa da WeWash — Avenida Sete de Setembro, 906, Fazenda, Itajaí - SC"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6603082251822!2d-48.65881332368758!3d-26.914273793270688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cbf59f0fb447%3A0x3098d0a4e47d5b12!2sAv.%20Sete%20de%20Setembro%2C%20906%20-%20Fazenda%2C%20Itaja%C3%AD%20-%20SC%2C%2088301-202!5e0!3m2!1spt-BR!2sbr!4v1777913693711!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen={true}
                   loading="lazy"

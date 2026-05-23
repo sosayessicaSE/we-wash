@@ -1,7 +1,6 @@
 import { Factory, Home } from "lucide-react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "../styles/globals.css";
 
 export default function Servicos() {
   return (
@@ -10,7 +9,10 @@ export default function Servicos() {
       
       {/* Promoções Section */}
       <section className="pt-24 pb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-4 drop-shadow-lg">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-4 drop-shadow-lg">
+          Serviços e Promoções
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-500 text-center mb-4">
           Promoções Semanais
         </h2>
         <div className="flex justify-center mb-10">

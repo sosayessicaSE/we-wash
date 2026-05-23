@@ -61,7 +61,7 @@ export default function Sobre() {
         <div className="absolute inset-0 z-10" />
         <Image
           src="/images/brasil-uruguay.svg"
-          alt="Itajai"
+          alt="Itajaí e Santa Catarina — região atendida pela WeWash"
           fill
           className="object-cover"
           priority
@@ -74,7 +74,7 @@ export default function Sobre() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6">
-              <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-4 drop-shadow-lg">Nossa Jornada</h2>
+              <h1 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-4 drop-shadow-lg">Nossa Jornada</h1>
               <div className="flex justify-start mb-6 md:mb-8">
                 <span className="block w-16 md:w-24 h-1 rounded-full bg-gradient-to-r from-blue-400 to-blue-200"></span>
               </div>
@@ -92,7 +92,7 @@ export default function Sobre() {
             <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-xl mt-8 md:mt-12">
               <Image
                 src="/images/uruguay.svg"
-                alt="Jornada de Montevidéu para Santa Catarina"
+                alt="Trajetória da WeWash do Uruguai para Santa Catarina"
                 fill
                 className="object-cover"
                 unoptimized={true}
