@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  
+}
+
+/* ================================
+            HEADER STYLES
+================================ */
+
+/* Header container */
+.header {
+  background-color: #ffffff;
+  color: rgb(83, 83, 83);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;   /* Horizontally centers the content */
+  align-items: center;       /* Vertically centers the content */
+  width: 100%;
+  height: auto;              /* Allow height to adjust based on aspect ratio */
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;           /* Prevent container from exceeding viewport width */
+}
+
+/* Image styles */
+.image-container img {
+  object-fit: cover;        /* Ensures the image covers the area without stretching */
+  width: 100%;              /* Makes the image take up full width */
+  height: auto;             /* Keeps aspect ratio */
+  max-width: 100%;          /* Prevents image from getting too big */
+  margin-left: auto;
+  margin-right: auto;       /* Keeps image centered horizontally */
+}
+
+
+
+/* Navigation menu */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 0 25px;
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Navigation item hover effect */
+nav ul li a:hover {
+  background-color: #fff;
+  color: #3b82f6;
+}
+.uruguay-flag {
+  position: fixed;     
+  top: 0;              
+  right: 0;            
+  z-index: 9999;        
+  width: 150px;         
+  margin-right: 2%;
+}
+/* ================================
+          MAIN CONTENT STYLES
+================================ */
+
+/* Main content container */
+main {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Main titles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.single-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  max-width: 100%;   /* Ensures it doesn't overflow */
+  padding: 20px;     /* Adds some space around the image */
+}
+
+.centered-image {
+  width: 100%;  /* Make the image responsive */
+  max-width: 800px;  /* Limit the maximum width */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 12px; /* Rounded corners for a softer look */
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d1e1ff;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #c8deff;
+
+}
+
+
+.image-box {
+  flex: 1;
+  
+}
+.image-box img{
+  border: 2px solid #2b2b2b3f;
+}
+
+.text-box {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.main-text {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+}
+
+.main-text::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ================================
+          SERVICES SECTION
+================================ */
+
+/* Container for services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Each service card */
+.serviceCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  perspective: 1000px; /* Enables the 3D effect */
+}
+
+/* Inner part of the service card (for flip effect) */
+.serviceCard-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.serviceCard:hover .serviceCard-inner {
+  transform: rotateY(180deg); /* Flips the card */
+}
+
+/* Front and back faces of the service card */
+.serviceCard-front, .serviceCard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Front face styling */
+.serviceCard-front {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Service card image */
+.serviceCard-front img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Service card title on front */
+.serviceCard-front h3 {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: #006f8e;
+  font-weight: 600;
+}
+
+/* Service card description on front */
+.serviceCard-front p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #777;
+}
+
+/* Back face styling */
+.serviceCard-back {
+  background-color: #006f8e;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Title on the back of the card */
+.serviceCard-back h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Description on the back of the card */
+.serviceCard-back p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ================================
+            FOOTER STYLES
+================================ */
+
+/* Footer container */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+
+/* ================================
+         RESPONSIVE DESIGN
+================================ */
+
+
+a{
+  font-size: 95%;
+}
+/* Mobile and tablet adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;  
+    justify-content: space-around;  
+  }
+
+  nav ul li {
+    margin: 0 2px;  
+  }
+
+  nav ul li a {
+    font-size: 0.8rem; 
+  }
+
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceCard {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .image-container {
+    width: 100%;
+    max-width: 1920px; 
+    margin: 0 auto;
+
+  }
+  .uruguay-flag {
+    width: 80px;       
+    height: auto;       
+  }
+
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-box {
+    margin-bottom: 20px;
+  }
+
+  .text-box {
+    padding-left: 0;
+  }
+
+}
