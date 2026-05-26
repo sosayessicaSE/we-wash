@@ -41,8 +41,8 @@ export default function Servicos() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Promoção de Lençóis</h3>
               <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-gray-400 line-through text-2xl">R$30</span>
-                <span className="text-blue-500 font-extrabold text-4xl">R$28</span>
+                <span className="text-gray-400 line-through text-2xl">R$40</span>
+                <span className="text-blue-500 font-extrabold text-4xl">R$35</span>
               </div>
               <p className="text-gray-600 text-sm">6 lençóis (sem passar)</p>
             </div>
@@ -54,8 +54,8 @@ export default function Servicos() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">Promoção de Roupas</h3>
               <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-gray-400 line-through text-2xl">R$35</span>
-                <span className="text-blue-500 font-extrabold text-4xl">R$30</span>
+                <span className="text-gray-400 line-through text-2xl">R$45</span>
+                <span className="text-blue-500 font-extrabold text-4xl">R$40</span>
               </div>
               <p className="text-gray-600 text-sm">Lavagem de 3 kilos</p>
             </div>
@@ -80,15 +80,15 @@ export default function Servicos() {
 
               <h4 className="text-lg font-bold text-blue-500 mb-2">Lavanderia Doméstica</h4>
               <div className="w-full mt-8 divide-y divide-gray-100">
-                <PriceRow title="LAVAGEM E SECAGEM" detail="(3 KILOS)" price="R$35" />
-                <PriceRow title="LAVAGEM E SECAGEM" detail="(1 PEÇA)" price="R$18" />
-                <PriceRow title="SECAGEM" detail="(3 KILOS)" price="R$30" />
+                <PriceRow title="LAVAGEM E SECAGEM" detail="(3 KILOS)" price="R$45" />
+                <PriceRow title="LAVAGEM E SECAGEM" detail="(1 PEÇA)" price="R$20" />
+                <PriceRow title="SECAGEM" detail="(3 KILOS)" price="R$35" />
                 <PriceRow title="SECAGEM" detail="(1 PEÇA)" price="R$15" />
-                <PriceRow title="CLAREAMENTO" detail="(1 PEÇA)" price="R$20" />
-                <PriceRow title="TIRA-MANCHAS" detail="(1 PEÇA)" price="R$20" />
+                <PriceRow title="CLAREAMENTO" detail="(1 PEÇA)" price="R$35" />
+                <PriceRow title="TIRA-MANCHAS" detail="(1 PEÇA)" price="R$35" />
                 <PriceRow title="COBERTOR" detail="(1 PEÇA)" price="R$80" />
-                <PriceRow title="MANTA" detail="(1 PEÇA)" price="R$35" />
-                <PriceRow title="TERNOS" detail="(COMPLETO)" price="R$70" />
+                <PriceRow title="MANTA" detail="(1 PEÇA)" price="R$45" />
+                <PriceRow title="TERNOS" detail="(COMPLETO)" price="R$85" />
                 <PriceRow title="TÊNIS" detail="(1 PEÇA)" price="R$35" />
                 <PriceRow title="VESTIDO" detail="(1 PEÇA)" price="R$70-100" />
               </div>
@@ -109,11 +109,11 @@ export default function Servicos() {
                       Todos os elementos de um quarto de hotel (passadas: com passagem a ferro){" "}
                       <span className="text-gray-400">(ex: 2 lençóis, 2-4 fronhas de almofada, 2-4 toalhas)</span>
                     </p>
-                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 sm:pt-0.5 self-end sm:self-start">R$40</span>
+                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 sm:pt-0.5 self-end sm:self-start">R$65</span>
                   </div>
                   <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:items-baseline sm:gap-4 pt-3 border-t border-blue-100/80">
                     <span className="text-gray-700 text-sm flex-1 min-w-0">Cliente recorrente (por pacote):</span>
-                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$35</span>
+                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$55</span>
                   </div>
                 </div>
               </div>
@@ -123,11 +123,11 @@ export default function Servicos() {
                 <div className="flex flex-col divide-y divide-blue-100/80">
                   <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:items-baseline sm:gap-4 pb-3">
                     <span className="text-gray-700 text-sm flex-1 min-w-0 pr-2">6 lençóis (sem passar):</span>
-                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$30</span>
+                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$40</span>
                   </div>
                   <div className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:items-baseline sm:gap-4 pt-3">
                     <span className="text-gray-700 text-sm flex-1 min-w-0 pr-2">6 lençóis (com passagem a ferro):</span>
-                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$45</span>
+                    <span className="text-blue-500 font-extrabold text-xl tabular-nums shrink-0 self-end sm:self-auto">R$55</span>
                   </div>
                 </div>
               </div>
