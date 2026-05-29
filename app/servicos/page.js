@@ -80,6 +80,8 @@ export default function Servicos() {
 
               <h4 className="text-lg font-bold text-blue-500 mb-2">Lavanderia Doméstica</h4>
               <div className="w-full mt-8 divide-y divide-gray-100">
+              <PriceRow title="LAVAGEM, SECAGEM E PASSADORIA" detail="(3 KILOS)" price="R$70" />
+              <PriceRow title="LAVAGEM, SECAGEM E PASSADORIA" detail="(1 PEÇA)" price="R$35" />
                 <PriceRow title="LAVAGEM E SECAGEM" detail="(3 KILOS)" price="R$45" />
                 <PriceRow title="LAVAGEM E SECAGEM" detail="(1 PEÇA)" price="R$20" />
                 <PriceRow title="SECAGEM" detail="(3 KILOS)" price="R$35" />
