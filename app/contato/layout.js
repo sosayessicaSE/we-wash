@@ -5,7 +5,7 @@ import { formatAddress, siteConfig } from '../../lib/site';
 
 export const metadata = createPageMetadata({
   title: 'Contato',
-  description: `Entre em contato com a WeWash em Itajaí. Endereço: ${formatAddress()}. WhatsApp ${siteConfig.phoneDisplay}. Horário: seg–sex 9h–18h, sáb 9h–13h.`,
+  description: `Entre em contato com a WeWash em Itajaí. Endereço: ${formatAddress()}. WhatsApp ${siteConfig.phoneDisplay}. Horário: seg–sex 9h–13h e 13h–18h, fechado sáb e dom.`,
   path: '/contato',
   keywords: [
     'contato lavanderia Itajaí',

@@ -82,12 +82,12 @@ export default function Contato() {
                     <h4 className="font-semibold text-gray-800 mb-1">Horário de Funcionamento</h4>
                     <p className="text-gray-600">
                       Segunda a Sexta-feira:<br />
-                      Das 09:00 às 18:00
-                  
+                      Das 09:00 às 13:00<br />
+                      Das 13:00 às 18:00
                     </p>
                     <p className="text-gray-600 mt-2">
-                      Sábados:<br />
-                      Das 09:00 às 13:00
+                      Sábados e Domingos:<br />
+                      Fechado
                     </p>
                   </div>
                 </div>
