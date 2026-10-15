@@ -12,17 +12,17 @@ export default function manifest() {
     lang: siteConfig.language,
     icons: [
       {
-        src: '/icon',
-        sizes: '32x32',
+        src: '/icon.png',
+        sizes: '192x192',
         type: 'image/png',
       },
       {
-        src: '/apple-icon',
+        src: '/apple-icon.png',
         sizes: '180x180',
         type: 'image/png',
       },
       {
-        src: '/images/WeWash.png',
+        src: '/images/wewash-mark.png',
         sizes: '512x512',
         type: 'image/png',
       },
