@@ -14,33 +14,36 @@ export default function AppleIcon() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(145deg, #60a5fa 0%, #2563eb 100%)',
-          borderRadius: 36,
+          background: 'linear-gradient(160deg, #4B8BF5 0%, #1D5FD6 100%)',
+          borderRadius: 40,
         }}
       >
         <span
           style={{
             color: 'white',
-            fontSize: 96,
+            fontSize: 100,
             fontWeight: 800,
             fontFamily: 'system-ui, sans-serif',
-            letterSpacing: '-0.05em',
+            letterSpacing: '-0.06em',
             lineHeight: 1,
           }}
         >
           W
         </span>
-        <span
-          style={{
-            color: 'rgba(255,255,255,0.9)',
-            fontSize: 18,
-            fontWeight: 600,
-            fontFamily: 'system-ui, sans-serif',
-            marginTop: 8,
-          }}
+        <svg
+          width="88"
+          height="22"
+          viewBox="0 0 88 22"
+          style={{ marginTop: 6 }}
         >
-          WeWash
-        </span>
+          <path
+            d="M4 12 Q22 2 44 12 T84 12"
+            fill="none"
+            stroke="white"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        </svg>
       </div>
     ),
     { ...size }
